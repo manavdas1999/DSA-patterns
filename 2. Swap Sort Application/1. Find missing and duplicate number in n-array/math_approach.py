@@ -4,6 +4,8 @@
 # Idea: sum of squares of actual, sum of actual, 
 # sum of n actual, sum of n
 
+# Issue: Not scalable for multiple missing and duplicates
+
 # assume: missing b, duplicate d
 # sum_of_n = a+b+c+d, actual_sum = a+d+c+d
 # sum_of_sq = a2+b2+c2+d2, actual_sq_sum = a2+d2+c2+d2
@@ -12,6 +14,7 @@
 # sum = sq_diff // diff = b2-d2/b-d = b + d (math formula)
 # missing = (sum + diff) // 2 = b
 # duplicate = sum - missing = d
+
 
 
 def fun(nums):
